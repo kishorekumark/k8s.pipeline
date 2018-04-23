@@ -3,14 +3,14 @@ pipeline:
     cluster_name: "demo-cluster1"
     cluster_provider: "amazon"
     image: banzaicloud/pipeline_client:latest
-    amazon_node_mincount: "1"
-    amazon_master_image: "ami-8ec0e1f4"
-    amazon_master_instance_type: "t2.medium"
-    amazon_node_image: "ami-8ec0e1f4"
-    amazon_node_instance_type: "t2.medium"
-    amazon_node_min_count: 1
-    amazon_node_min_count: 1
-    amazon_location: "us-east-1"
+    plugin_amazon_node_mincount: "1"
+    plugin_amazon_master_image: "ami-8ec0e1f4"
+    plugin_amazon_master_instance_type: "t2.medium"
+    plugin_amazon_node_image: "ami-8ec0e1f4"
+    plugin_amazon_node_instance_type: "t2.medium"
+    plugin_amazon_node_min_count: 1
+    plugin_amazon_node_min_count: 1
+    plugin_amazon_location: "us-east-1"
     
     secrets: [ plugin_endpoint, plugin_username, plugin_password ]
    
