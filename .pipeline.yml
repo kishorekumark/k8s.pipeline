@@ -3,7 +3,6 @@ pipeline:
     cluster_name: "demo-cluster1"
     cluster_provider: "amazon"
     image: banzaicloud/pipeline_client:latest
-    secrets: [ plugin_endpoint, plugin_username, plugin_password ]
     amazon_node_mincount: "1"
     amazon_master_image: "ami-8ec0e1f4"
     amazon_master_instance_type: "t2.medium"
@@ -12,6 +11,8 @@ pipeline:
     amazon_node_min_count: 1
     amazon_node_min_count: 1
     amazon_location: "us-east-1"
+    
+    secrets: [ plugin_endpoint, plugin_username, plugin_password ]
    
     
    
