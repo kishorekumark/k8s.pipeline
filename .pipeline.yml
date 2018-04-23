@@ -1,0 +1,8 @@
+pipeline:
+  create_cluster:
+    cluster_name: "demo-cluster1"
+    cluster_provider: "amazon"
+    image: banzaicloud/pipeline_client:latest
+    secrets: [ plugin_endpoint, plugin_username, plugin_password ]
+   
+    
